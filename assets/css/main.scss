@@ -61,3 +61,17 @@
 .masthead__menu-item .language-toggle:hover {
   border-color: var(--global-link-color);
 }
+
+/* Blog post status */
+.archive__item-pinned {
+  display: inline-block;
+  margin-right: 0.45em;
+  padding: 0.12em 0.5em;
+  border-radius: 999px;
+  background: var(--global-link-color);
+  color: var(--global-bg-color);
+  font-size: 0.55em;
+  font-weight: 600;
+  line-height: 1.4;
+  vertical-align: 0.18em;
+}

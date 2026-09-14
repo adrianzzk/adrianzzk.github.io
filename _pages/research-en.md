@@ -19,7 +19,3 @@ I study normal-tissue injury and treatment-related adverse effects following car
 ## Skill Development for AI Agents
 
 I design, develop, and deploy reusable skills for AI agents in research and real-world applications, focusing on workflow design, tool integration, and reliable task execution.
-
-## Methods and Skills
-
-My methods and technical skills include Python programming, multimodal medical image analysis, deep learning, machine learning, data preprocessing, feature extraction, and skill development for AI agents.
