@@ -1,0 +1,34 @@
+# The following is the order of the links in the header of the website.
+#
+# Changing the order here will adjust the order and you can also add additional
+# links. Removing a link prevents it from showing in the header, but does not
+# prevent it from being included in the site.
+#
+# NOTE that only one of the CV options should be selected, the first is for the
+#      Markdown formatted page while the second is generated using JSON.
+
+main_zh:
+  - title: "研究"
+    url: /research/
+
+  - title: "论文"
+    url: /publications/
+
+  - title: "博客"
+    url: /blog/
+    
+  - title: "简历"
+    url: /cv/
+
+main_en:
+  - title: "Research"
+    url: /en/research/
+
+  - title: "Publications"
+    url: /en/publications/
+
+  - title: "Blog"
+    url: /en/blog/
+
+  - title: "CV"
+    url: /en/cv/

@@ -1,0 +1,21 @@
+---
+layout: archive
+title: "博客"
+permalink: /blog/
+lang: zh-CN
+lang_switch_url: /en/blog/
+lang_switch_label: English
+author_profile: true
+---
+
+这里将记录研究笔记、论文阅读和技术实践。
+
+{% include base_path %}
+
+{% if site.posts.size == 0 %}
+  <p>文章正在准备中。</p>
+{% else %}
+  {% for post in site.posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}

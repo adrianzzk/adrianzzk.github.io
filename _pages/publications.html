@@ -1,0 +1,31 @@
+---
+layout: archive
+title: "论文"
+permalink: /publications/
+lang: zh-CN
+lang_switch_url: /en/publications/
+lang_switch_label: English
+author_profile: true
+---
+
+{% include base_path %}
+
+{% if site.publications.size == 0 %}
+  <p>论文与学术成果将在后续更新。</p>
+{% else %}
+  {% for post in site.publications reversed %}
+    <article class="archive__item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+      <h2 class="archive__item-title" itemprop="headline">
+        <a href="{{ post.paperurl }}">{{ post.title_zh | default: post.title }}</a>
+      </h2>
+      <p>{{ post.authors }}</p>
+      <p><em>{{ post.venue_zh | default: post.venue }}</em>，{{ post.date | date: "%Y" }}，第 {{ post.pages }} 页。</p>
+      <p itemprop="description">{{ post.excerpt_zh | default: post.excerpt }}</p>
+      <p>
+        <a href="{{ post.paperurl }}">Springer 页面</a> ·
+        <a href="https://doi.org/{{ post.doi }}">DOI</a>{% if post.codeurl %} ·
+        <a href="{{ post.codeurl }}">代码</a>{% endif %}
+      </p>
+    </article>
+  {% endfor %}
+{% endif %}

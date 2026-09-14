@@ -1,0 +1,21 @@
+---
+layout: archive
+title: "Blog"
+permalink: /en/blog/
+lang: en
+lang_switch_url: /blog/
+lang_switch_label: 中文
+author_profile: true
+---
+
+This space will feature research notes, paper reviews, and technical explorations.
+
+{% include base_path %}
+
+{% if site.posts.size == 0 %}
+  <p>Posts are coming soon.</p>
+{% else %}
+  {% for post in site.posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}

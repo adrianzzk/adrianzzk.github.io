@@ -1,0 +1,31 @@
+---
+layout: archive
+title: "Publications"
+permalink: /en/publications/
+lang: en
+lang_switch_url: /publications/
+lang_switch_label: 中文
+author_profile: true
+---
+
+{% include base_path %}
+
+{% if site.publications.size == 0 %}
+  <p>Publication details will be added in a future update.</p>
+{% else %}
+  {% for post in site.publications reversed %}
+    <article class="archive__item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+      <h2 class="archive__item-title" itemprop="headline">
+        <a href="{{ post.paperurl }}">{{ post.title }}</a>
+      </h2>
+      <p>{{ post.authors }}</p>
+      <p><em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}, pp. {{ post.pages }}.</p>
+      <p itemprop="description">{{ post.excerpt }}</p>
+      <p>
+        <a href="{{ post.paperurl }}">Springer</a> ·
+        <a href="https://doi.org/{{ post.doi }}">DOI</a>{% if post.codeurl %} ·
+        <a href="{{ post.codeurl }}">Code</a>{% endif %}
+      </p>
+    </article>
+  {% endfor %}
+{% endif %}
